@@ -72,3 +72,6 @@ if st.session_state.history:
             st.info(f"⚠️ {past_prompt}")
 else:
     st.write("No prompts analyzed yet!")
+
+# Built by Rishit Goel © 2024
+# Licensed under the MIT License
