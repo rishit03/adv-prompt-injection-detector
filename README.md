@@ -1,21 +1,48 @@
 # 🛡️ Adversarial Prompt Injection Detection System
 
-A lightweight system to detect and block prompt injection attacks in LLM applications — tailored for sensitive environments like banking and finance.
+Secure your AI-powered banking and financial applications from prompt injection attacks using this real-time detection system!
 
-## 💡 Motivation
+---
 
-AI agents are being integrated into high-stakes domains like banking. This system helps prevent prompt injection attacks that manipulate models into ignoring instructions or leaking sensitive info.
+## 📋 About the Project
 
-## 🔍 What it Does
+With the rise of AI in banking, attackers can manipulate prompts to trick AI systems into making unauthorized transactions or leaking sensitive data.  
+This project detects such adversarial prompts **before** they reach the backend AI models.
 
-- Detects adversarial/jailbreak inputs using rules or ML
-- Flags and scores suspicious prompts
-- Can sanitize or block inputs before reaching backend models
+Built with:
+- Machine Learning (Logistic Regression)
+- Natural Language Processing (TF-IDF)
+- Streamlit Web Interface
 
-## 🚀 Getting Started
+---
+
+## ✨ Features
+
+- ✅ Detects Safe, Medium Risk, and High Risk prompts
+- 🔥 Real-time analysis via a web app
+- 🕘 Prompt history tracking
+- 🛡️ Defends AI assistants from prompt injection attacks
+- 📚 Expandable with larger datasets and advanced models
+
+---
+
+## 📂 Project Structure
 
 ```bash
-git clone https://github.com/yourusername/adv-prompt-injection-detector.git
-cd adv-prompt-injection-detector
-pip install -r requirements.txt
-streamlit run streamlit_app.py
+adv-prompt-injection-detector/
+│
+├── src/
+│   ├── main.py
+│   ├── trainer.py
+│   ├── detector.py
+│   ├── utils.py
+│   └── prompt_loader.py
+├── models/
+│   ├── model.pkl
+│   └── vectorizer.pkl
+├── data/
+│   └── dataset.csv
+├── streamlit_app.py
+├── test/
+├── README.md
+├── requirements.txt
