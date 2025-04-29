@@ -25,8 +25,7 @@ It uses a custom-trained model on thousands of realistic, adversarial, and gray-
 
 ## 🚀 Live Demo
 
-👉 Try it here: [https://huggingface.co/spaces/yourusername/promptshield](https://huggingface.co/spaces/yourusername/promptshield)  
-(*Update this link with your actual HuggingFace URL*)
+👉 Try it here: [https://huggingface.co/spaces/rishit03/promptshield](https://huggingface.co/spaces/rishit03/promptshield)
 
 ---
 
@@ -54,7 +53,7 @@ promptshield/
 │   ├── trainer.py           # Model trainer
 │   └── __init__.py
 ├── data/
-│   └── advanced_dataset.csv # Training data (optional)
+│   └── dataset.csv # Training data
 ├── requirements.txt
 └── README.md
 ```
@@ -64,7 +63,7 @@ promptshield/
 ## 🧠 How to Run Locally
 
 ```bash
-git clone https://github.com/yourusername/promptshield.git
+git clone https://github.com/rishit03/promptshield.git
 cd promptshield
 
 pip install -r requirements.txt
