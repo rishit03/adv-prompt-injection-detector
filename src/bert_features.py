@@ -1,12 +1,12 @@
 # src/bert_features.py
 
-from transformers import BertTokenizer, BertModel
+from transformers import DistilBertTokenizer, DistilBertModel
 import torch
 import numpy as np
 
 # Load BERT model and tokenizer (you can also try distilBERT later for faster speed)
-tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
-model = BertModel.from_pretrained('bert-base-uncased')
+tokenizer = DistilBertTokenizer.from_pretrained('distilbert-base-uncased')
+model = DistilBertModel.from_pretrained('distilbert-base-uncased')
 
 # Put model into evaluation mode
 model.eval()
