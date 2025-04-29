@@ -1,6 +1,6 @@
 streamlit
-spacy
 scikit-learn
-openai
-pandas
 joblib
+pandas
+transformers
+torch
