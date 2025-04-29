@@ -3,7 +3,7 @@
 import streamlit as st
 import joblib
 import os
-from src.bert_features import encode_prompts  # Import your BERT encoder
+from bert_features import encode_prompts  # Import your BERT encoder
 
 # Set Streamlit page config
 st.set_page_config(page_title="PromptShield AI 2.0", page_icon="🛡️", layout="centered")
