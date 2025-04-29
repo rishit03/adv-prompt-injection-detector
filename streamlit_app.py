@@ -1,8 +1,11 @@
 # streamlit_app.py
-
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))  # 👈 Add this!
 import streamlit as st
 import joblib
-import os
+import streamlit as st
+import joblib
 from bert_features import encode_prompts  # Import your BERT encoder
 
 # Set Streamlit page config
