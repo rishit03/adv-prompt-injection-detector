@@ -1,56 +1,104 @@
-# 🛡️ Adversarial Prompt Injection Detection System
+# 🛡️ PromptShield AI 2.0
 
-Secure your AI-powered banking and financial applications from prompt injection attacks using this real-time detection system!
+**Real-time BERT-powered Prompt Injection Detection Firewall**  
+Stop malicious prompt manipulation attempts before they hit your AI.
 
----
-
-## 📋 About the Project
-
-With the rise of AI in banking, attackers can manipulate prompts to trick AI systems into making unauthorized transactions or leaking sensitive data.  
-This project detects such adversarial prompts **before** they reach the backend AI models.
-
-Built with:
-- Machine Learning (Logistic Regression)
-- Natural Language Processing (TF-IDF)
-- Streamlit Web Interface
+![HuggingFace Spaces](https://img.shields.io/badge/Live-HuggingFace-blue?logo=huggingface)
 
 ---
 
-## ✨ Features
+## 📌 About the Project
 
-- ✅ Detects Safe, Medium Risk, and High Risk prompts
-- 🔥 Real-time analysis via a web app
-- 🕘 Prompt history tracking
-- 🛡️ Defends AI assistants from prompt injection attacks
-- 📚 Expandable with larger datasets and advanced models
+PromptShield AI is a real-time prompt injection detection system designed for LLM-driven banking, fintech, and chatbot applications.
+
+It uses a custom-trained model on thousands of realistic, adversarial, and gray-zone prompts to detect:
+- Polite but malicious prompt injections
+- Multi-step logical attack prompts
+- Conversational "friendly-looking" bypass attempts
+- Obvious threats like OTP bypass, admin escalation, etc.
+
+✅ Built using BERT embeddings  
+✅ Tuned with real-world thresholding logic  
+✅ Live deployed on HuggingFace Spaces
 
 ---
 
-## 📂 Project Structure
+## 🚀 Live Demo
 
-```bash
-adv-prompt-injection-detector/
-│
-├── src/
-│   ├── main.py
-│   ├── trainer.py
-│   ├── detector.py
-│   ├── utils.py
-│   └── prompt_loader.py
-├── models/
-│   ├── model.pkl
-│   └── vectorizer.pkl
-├── data/
-│   └── dataset.csv
-├── streamlit_app.py
-├── test/
-├── README.md
-├── requirements.txt
+👉 Try it here: [https://huggingface.co/spaces/yourusername/promptshield](https://huggingface.co/spaces/yourusername/promptshield)  
+(*Update this link with your actual HuggingFace URL*)
+
+---
+
+## ⚙️ Features
+
+- ✅ Real-time prediction (Safe / Injected)
+- ✅ Confidence-based thresholding
+- ✅ BERT embeddings via DistilBERT
+- ✅ Noisy, adversarial, polite prompt detection
+- ✅ Streamlit UI for public demo
+- ✅ Explainability: keyword triggers shown
+- ✅ HuggingFace Spaces compatible
+
+---
+
+## 📂 Folder Structure
 
 ```
+promptshield/
+├── app.py                   # Streamlit app entrypoint
+├── models/
+│   └── model.pkl            # Trained model
+├── src/
+│   ├── bert_features.py     # BERT encoder
+│   ├── trainer.py           # Model trainer
+│   └── __init__.py
+├── data/
+│   └── advanced_dataset.csv # Training data (optional)
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🧠 How to Run Locally
+
+```bash
+git clone https://github.com/yourusername/promptshield.git
+cd promptshield
+
+pip install -r requirements.txt
+
+streamlit run app.py
+```
+
+---
+
+## 🧪 Training
+
+```bash
+python -m src.trainer
+```
+
+---
+
+## 🛠️ Built With
+
+- [Streamlit](https://streamlit.io/)
+- [scikit-learn](https://scikit-learn.org/)
+- [transformers (HuggingFace)](https://huggingface.co/transformers/)
+- [torch](https://pytorch.org/)
+- [joblib](https://joblib.readthedocs.io/)
 
 ---
 
 ## 📜 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+MIT License
+
+---
+
+## 🙌 Author
+
+Built with 🔥 by **Rishit Goel**  
+(Master's Student @ CSULB)
